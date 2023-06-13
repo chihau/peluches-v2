@@ -2,7 +2,7 @@
 
 Este proyecto permite detectar distintos tipos de peluches (Duende y Dash) utilizando un modelo creado con [Teachable Machine](https://teachablemachine.withgoogle.com/).
 
-Está basado en el [Bananameter](https://medium.com/p/4bfffa765866/).
+Al detectar un peluche, cambiará una ampolleta Philips HUE de color (rojo al detectar a Duende y Azul al detectar a Dash).
 
 ## Cómo modificar el proyecto
 
@@ -91,5 +91,24 @@ function changeColor(color) {
 }
 ```
 
+### Levantar un Servidor Web
+
+Para que el proyecto funcione de manera correcta, debes levantar un Servidor Web. Existen distintas formas de hacer ésto, por ejemplo puedes usar el Servidor Web de Python.
+
+```
+// Dependiendo de tu configuración, debería funcionar utilizando alguno de estos comandos
+python -m SimpleHTTPServer 8080
+python3 -m http.server 8080
+python -m http.server 8080
+```
+
+Para verificar que funciona, abre el navegador y escribe la siguiente dirección:
+
+```
+http://localhost:8080
+```
+
 ## Más detalles y documentación
-Este proyecto utiliza la biblioteca `tmImage`. Para mayor información puedes ver la [documentación](https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image).
+Este proyecto está basado en el [Bananameter](https://medium.com/p/4bfffa765866/).
+
+Utiliza la biblioteca `tmImage`. Para mayor información puedes ver la [documentación](https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image).
