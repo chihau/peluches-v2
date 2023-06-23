@@ -31,7 +31,7 @@ Un ejemplo de datos de probabilidades retornados por el modelo para ser usados e
 data = [
     { className: 'Duende', probability: .25 },
     { className: 'Dash', probability: .75 },
-    { className: 'Normal', probability: 0.00 }
+    { className: 'Normal', probability: .00 }
 ]
 ```
 
